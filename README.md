@@ -10,7 +10,7 @@ Welcome! This project is an **Agentic Retrieval-Augmented Generation (RAG)** sys
 ---
 
 ## How It Works
-The system is built using a **Graph-based architecture** (LangGraph). Here’s the "brain" logic:
+The system is built using a **Graph-based architecture** (LangGraph). Here’s the logic:
 
 1.  **The Router:** When you ask a question, the AI determines the intent using a routing node.
 2.  **Vector Store:** If you ask about technical ML details, it queries a ChromaDB index containing your specialized PDFs (processed via Docling).
@@ -40,7 +40,7 @@ GROQ_API_KEY=your_groq_key
 TAVILY_API_KEY=your_tavily_key
 LANGFUSE_PUBLIC_KEY=your_optional_key
 LANGFUSE_SECRET_KEY=your_optional_key
-----
+```
 2. Prepare Documents
 Place your PDF files (e.g., Machine_Learning_Design.pdf) in the project folder. The system will automatically parse them and create a local chroma_db folder on the first run.
 3. Launch the Backend
@@ -55,11 +55,14 @@ nodes.py: The "logic steps" (Routing, Retrieving, and Generating).
 agent.py: The "blueprint" that connects the nodes into a workflow graph.
 main.py: The API layer (FastAPI) that hosts the agent and manages the session config.
 app.py: The chat interface (Streamlit) that communicates with the API via REST.
+```
+
 Application Screenshots (Output)
 ![WhatsApp Image 2026-02-08 at 7 55 57 PM](https://github.com/user-attachments/assets/7fa7461c-c037-46ca-9ac9-d2c566232e9e)
 ![WhatsApp Image 2026-02-08 at 7 58 37 PM](https://github.com/user-attachments/assets/26054b99-2f40-43d3-8ed6-261af8ca85f6)
 ![WhatsApp Image 2026-02-08 at 7 59 42 PM](https://github.com/user-attachments/assets/d57a6e99-6ec9-4ab6-b723-9471436fe32d)
 ![WhatsApp Image 2026-02-08 at 8 00 50 PM](https://github.com/user-attachments/assets/2ebb8b99-f353-4f05-865e-b5c9b6b544fb)
+
 
 
 
