@@ -49,7 +49,7 @@ python main.py
 Open a second terminal and run the Streamlit interface
 streamlit run app.py
 ```
-📁 Project Structure
+Project Structure
 tools.py: The "hands" of the agent (Web search and PDF retrieval logic).
 nodes.py: The "logic steps" (Routing, Retrieving, and Generating).
 agent.py: The "blueprint" that connects the nodes into a workflow graph.
@@ -62,6 +62,7 @@ Application Screenshots (Output)
 ![WhatsApp Image 2026-02-08 at 7 58 37 PM](https://github.com/user-attachments/assets/26054b99-2f40-43d3-8ed6-261af8ca85f6)
 ![WhatsApp Image 2026-02-08 at 7 59 42 PM](https://github.com/user-attachments/assets/d57a6e99-6ec9-4ab6-b723-9471436fe32d)
 ![WhatsApp Image 2026-02-08 at 8 00 50 PM](https://github.com/user-attachments/assets/2ebb8b99-f353-4f05-865e-b5c9b6b544fb)
+
 
 
 
